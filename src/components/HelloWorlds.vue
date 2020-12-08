@@ -41,6 +41,8 @@ export default {
     initSwiper() {
       new Swiper(".swiper-container", {
         loop: true, // 循环模式选项
+        observer: true,
+        observeParents: true,
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: "auto",
